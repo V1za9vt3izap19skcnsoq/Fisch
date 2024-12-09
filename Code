@@ -1,1 +1,8 @@
+local executor = identifyexecutor and identifyexecutor() or "Unknown"
+print("Executor: " .. executor)
+if executor == "Solara" or executor == "solara" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/V1za9vt3izap19skcnsoq/Fisch/refs/heads/main/solara"))()
+else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/V1za9vt3izap19skcnsoq/Fisch/refs/heads/main/mobile"))()
+end
 
